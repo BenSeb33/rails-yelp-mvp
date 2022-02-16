@@ -11,4 +11,5 @@
 </ul>
 
 <%= link_to "index", restaurants_path %>
-<%= link_to "ajouter un avis", new_restaurant_review_path(@restaurant.id) %>
+
+<%= render "reviews/new", review: @review  %>
